@@ -1,0 +1,128 @@
+h1{
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(105, 36, 4);
+}
+
+h2{
+    color: rgb(10, 20, 155);
+}
+
+h3{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(248, 199, 207);
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+header>p{
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+    color: rgb(19, 84, 168);
+}
+
+h2, h3, p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h2, h3, p, .code-card{
+    -moz-user-select: all;
+    -webkit-user-select: all;
+    -ms-user-select: all;
+    user-select: all;   
+}
+
+body{
+    background: linear-gradient(rgb(216, 241, 253), rgb(248, 225, 243));
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards{
+    width: 27%;
+    border: 3px solid rgb(121, 42, 55);
+    background-color: rgba(211, 194, 180, 0.918);
+    padding: 1.2rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.cards .card-title{
+    text-align: center;
+    background-color: rgb(245, 251, 237);
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    transition: all 1s ease-out;
+}
+
+.card-paragraph{
+    background-color: rgb(238, 231, 209);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 1.2rem 1rem;
+    border-radius: 10px;
+    transition: all 1s ease-out;
+}
+
+.cards .code-card{
+    margin: 20px;
+    flex-grow: 1;
+    background-color: whitesmoke;
+}
+
+/* need to work on the WHITE-SPACE, OVERFLOW, TAB-SIZE,BORDER-RADIUS*/
+.cards pre{
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
+    padding: 1.2rem 1rem;
+    border-radius: 10px;
+}
+
+.spaces{
+    width: 100%; 
+    height: 3rem;
+}
+
+.header-p{
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: left;
+}
+
+.card-title:hover{
+    margin: 7%;
+    background-color: rgb(253, 204, 204);
+}
+
+.card-paragraph:hover{
+    font-size: 1.7rem;
+    color: rgb(233, 136, 26);
+}
+
+@media screen and (max-width: 768px){
+    .cards{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .cards{
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .cards{
+        max-width: 33.33%;
+    }
+}
+
